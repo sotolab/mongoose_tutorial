@@ -32,6 +32,10 @@ module.exports = function(app, Book)
         book.title = req.body.title;
         book.author = req.body.author;
         book.published_date = new Date(req.body.published_date);
+        
+        // title: test
+        // author: nice
+        // published_date: 2019-11-14
 
         book.save(function(err){
             if(err){
